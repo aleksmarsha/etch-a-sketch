@@ -8,6 +8,13 @@ body {
     background-color: #003B00;
     color: #00FF41;
     border: none;
+    font-size: 20px;
+    padding: 7px;
+    text-align: center;
+}
+
+.paint:hover {
+    text-decoration: underline;
 }
 
 header {
@@ -20,5 +27,15 @@ header {
 
 .buttons {
     background-color: #003B00;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     width: fit-content;
+    border-left: none;
+    border-top: 10px groove #00FF41;
+    border-right: 10px groove #00FF41;
+    border-bottom: 10px groove #00FF41;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
 }
+
