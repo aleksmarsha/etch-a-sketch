@@ -1,16 +1,17 @@
 body {
     margin: 0;
     font-family: Helvetica, sans-serif;
-    background-color: #0D0208;
+    background-color: #FFF5E4;
 }
 
 .paint {
-    background-color: #003B00;
-    color: #00FF41;
+    background-color: #FFC4C4;
+    color: #EE6983;
     border: none;
     font-size: 1.4rem;
-    padding: 0.5rem;
+    margin: 0.5rem 0 0.5rem 0.5rem;
     flex: 1;
+    font-weight: 800;
 }
 
 .paint:hover {
@@ -18,22 +19,19 @@ body {
 }
 
 header {
-    color: #008F11;
+    color: #850E35;
     text-align: center;
     padding: 0.7rem;
     margin-bottom: 2rem;
 }
 
 #buttons {
-    background-color: #003B00;
+    background-color: #FFC4C4;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    height: 60vh;
-    border-left: none;
-    border-top: 0.5rem groove #00FF41;
-    border-right: 0.5rem groove #00FF41;
-    border-bottom: 0.5rem groove #00FF41;
+    min-height: 60vh;
+    border: none;
     border-top-right-radius: 2.5rem;
     border-bottom-right-radius: 2.5rem;
     flex-grow: 1;
@@ -46,7 +44,7 @@ h1 {
 
 #paper {
     background-color: white;
-    height: 60vh;
+    min-height: 60vh;
     flex-grow: 5;
     margin: 0 1rem;
 }
