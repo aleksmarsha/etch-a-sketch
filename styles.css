@@ -52,3 +52,18 @@ h1 {
 #together {
     display: flex;
 }
+
+#change {
+    background-color: #FFC4C4;
+    color: #EE6983;
+    display: flex;
+    flex-direction: column;
+    min-height: 60vh;
+    border: none;
+    border-top-left-radius: 2.5rem;
+    border-bottom-left-radius: 2.5rem;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    font-size: 1.4rem;
+    font-weight: 800;
+}
