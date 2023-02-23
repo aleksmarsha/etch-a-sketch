@@ -13,16 +13,16 @@
         </header>
         <div id="together" >
             <div id="buttons">
-                <button class="paint">BLACK COLOR</button>
-                <button class="paint">RAINBOW MADNESS</button>
-                <button class="paint">SHADE IT</button>
-                <button class="paint">YOUR CHOICE</button>
-                <button class="paint">RUB OUT</button>
+                <button id="black" class="paint">BLACK COLOR</button>
+                <button id="rainbow" class="paint">RAINBOW MADNESS</button>
+                <button id="shadow" class="paint">SHADE IT</button>
+                <button id="colors" class="paint">YOUR CHOICE</button>
+                <button id="white" class="paint">RUB OUT</button>
             </div>
             <div id="paper"></div>
             <div id="change">
                 <div>
-                    1<input id="modify" type="range" value="16" min="1" max="100">100
+                    1<input id="modify" type="range" value="16" min="1" max="100" oninput="fillPaper(this.value)">100
                 </div>
                 <div><button id="space">CLEAR EVERYTHING</button></div>
             </div>

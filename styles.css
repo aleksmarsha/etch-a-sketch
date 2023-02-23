@@ -69,10 +69,10 @@ h1 {
     font-weight: 800;
 }
 
-#paper div {
+.sections {
     border: 0.1px solid black;
 }
 
-#paper div:hover {
+.sections:hover {
     background-color: peachpuff;
 }
