@@ -18,14 +18,12 @@
                 <button id="shadow" class="paint">SHADE IT</button>
                 <button id="colors" class="paint">YOUR CHOICE</button>
                 <button id="white" class="paint">RUB OUT</button>
+                <button id="space" class="paint" >CLEAR EVERYTHING</button>
+                <div>
+                1<input id="modify" type="range" value="16" min="1" max="100" oninput="fillPaper(this.value)">100
+                </div>
             </div>
             <div id="paper"></div>
-            <div id="change">
-                <div>
-                    1<input id="modify" type="range" value="16" min="1" max="100" oninput="fillPaper(this.value)">100
-                </div>
-                <div><button id="space">CLEAR EVERYTHING</button></div>
-            </div>
-        </div>    
+        </div>   
     </body>
 </html>

@@ -10,7 +10,22 @@ function fillPaper(value) {
 		div.classList.add("sections");
 		whitePaper.append(div);
 	}
+	let paint = Array.from(document.getElementsByClassName("sections"));
+	paint.forEach(pnt => {
+	pnt.addEventListener('click', () => {
+		if (color === "black") {
+			pnt.style.backgroundColor = color;
+		} else if (color === "rainbow") {
+			let randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+			pnt.style.backgroundColor = randomColor;
+		} else if (color === "shadow" && pnt.style.backgroundColor) {
+			randomShadow = Math.floor(Math.random() * 101);
+			pnt.style.filter = `opacity(${randomShadow}%)`;
+		}
+	});
+});
 }
+
 
 fillPaper(rowsAndColumns);
 
