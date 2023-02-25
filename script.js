@@ -21,6 +21,10 @@ function fillPaper(value) {
 		} else if (color === "shadow" && pnt.style.backgroundColor) {
 			randomShadow = Math.floor(Math.random() * 101);
 			pnt.style.filter = `opacity(${randomShadow}%)`;
+		} else if (color === "pick") {
+			pnt.style.backgroundColor = pick;
+		} else if (color === "white" && pnt.style.backgroundColor) {
+			pnt.removeAttribute("style");
 		}
 	});
 });
@@ -38,3 +42,9 @@ choice.forEach(clr => {
 		return color;
 	});
 });
+
+let pick = "";
+function pickColor(choice) {
+	pick = choice;
+	return pick;
+}
