@@ -10,6 +10,9 @@ function fillPaper(value) {
 		div.classList.add("sections");
 		whitePaper.append(div);
 	}
+
+	document.getElementById("slider").innerHTML = `Value: <strong>${value}</strong>`;
+
 	let paint = Array.from(document.getElementsByClassName("sections"));
 	paint.forEach(pnt => {
 	pnt.addEventListener('click', () => {
@@ -39,6 +42,11 @@ choice.forEach(clr => {
 	let idColor = clr.getAttribute("id");
 	clr.addEventListener('click', () => {
 		color = idColor;
+		if (color === "space") {
+			Array.from(document.getElementsByClassName("sections")).forEach(psc => {
+			psc.removeAttribute("style");
+			});
+		}
 		return color;
 	});
 });
