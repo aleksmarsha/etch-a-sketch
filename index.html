@@ -1,4 +1,4 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -14,15 +14,24 @@
         <div id="together" >
             <div id="buttons">
                 <button id="black" class="paint">BLACK COLOR</button>
-                <button id="rainbow" class="paint">RAINBOW MADNESS</button>
+                <button id="rainbow" class="paint">RAINBOW MAGIC</button>
                 <button id="shadow" class="paint">SHADE IT</button>
                 <button id="white" class="paint">RUB OUT</button>
-                <button id="space" class="paint" >CLEAR EVERYTHING</button>
-                <input type="color" id="pick" class="paint" oninput="pickColor(this.value)">
+                <button id="space" class="paint" >CLEAR WHOLE</button>
+                <input type="color" id="pick" class="paint" value="#EE6983" oninput="pickColor(this.value)" onclick="pickColor(this.value)">
+                <div>
+                <button id="sub">-</button>    
                 <input id="modify" type="range" value="16" min="1" max="100" oninput="fillPaper(this.value)">
+                <button id="add">+</button>
+                </div>
                 <div id="slider"></div>
             </div>
             <div id="paper"></div>
-        </div>   
+        </div>
+        <footer>
+            <div>
+            No Copyright &copy
+            </div>
+        </footer>  
     </body>
 </html>
